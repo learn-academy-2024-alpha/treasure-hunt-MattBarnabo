@@ -76,6 +76,8 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 --passed the index back to handleGamePlay from handClick
 
 - Can click on any of the question marks and a tree emoji appears instead of the alert
+--updated the boards index within handleGamePlay to a tree emoji
+--updated state by destructing each instance of the tree change to a new array.
 
 **Story 2**: In order to play the treasure hunt game, as the user of the application, I should be able to see a winning square and a losing square.
 

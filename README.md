@@ -73,7 +73,7 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 -- passed index to the alert
 --made a handleGamePlay function and passed props to square
 --called the handleGamePlay in handClick
---
+--passed the index back to handleGamePlay from handClick
 
 - Can click on any of the question marks and a tree emoji appears instead of the alert
 

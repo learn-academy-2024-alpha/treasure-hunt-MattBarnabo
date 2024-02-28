@@ -56,28 +56,28 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 **Acceptance Criteria**
 
 - Can see a page with a three-by-three grid board game
--- get one square on screen
---map over the array in state to get nine squares
---square- individual 
---board - set of squares
---added a div to the board and styling to place the squares in a grid
+  -- get one square on screen
+  --map over the array in state to get nine squares
+  --square- individual 
+  --board - set of squares
+  --added a div to the board and styling to place the squares in a grid
 
 - Can see a question mark in each square
--- passed the question mark from state into the square
--- add css to resize and position the question mark in the square
+  -- passed the question mark from state into the square
+  -- add css to resize and position the question mark in the square
 
 - Can click on any of the question marks and see an alert with the index position of that question mark in the array
--- added onclick to component to return an alert
---created function to handleClick adding an alert
---passed index through props and destructured
--- passed index to the alert
---made a handleGamePlay function and passed props to square
---called the handleGamePlay in handClick
---passed the index back to handleGamePlay from handClick
+  -- added onclick to component to return an alert
+  --created function to handleClick adding an alert
+  --passed index through props and destructured
+  -- passed index to the alert
+  --made a handleGamePlay function and passed props to square
+  --called the handleGamePlay in handClick
+  --passed the index back to handleGamePlay from handClick
 
 - Can click on any of the question marks and a tree emoji appears instead of the alert
---updated the boards index within handleGamePlay to a tree emoji
---updated state by destructing each instance of the tree change to a new array.
+  --updated the boards index within handleGamePlay to a tree emoji
+  --updated state by destructing each instance of the tree change to a new array.
 
 **Story 2**: In order to play the treasure hunt game, as the user of the application, I should be able to see a winning square and a losing square.
 
@@ -86,7 +86,12 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 **Acceptance Criteria**
 
 - Can select the random winning square and the question mark will become a treasure emoji
+  -- random number 0-8 set that to state variable
+  -- conditional statement to handleGamePlay to set diamond emoji when current square equals treasure location
+
 - Can select the random losing square and the question mark will become a bomb emoji
+  -- random number 0-8 set that to state variable
+  -- conditional statement to handleGamePlay to set bomb emoji when current square equals bomb location
 
 **Story 3**: In order to play the treasure hunt game, as the user of the application, I should be able to restart the game at any time.
 

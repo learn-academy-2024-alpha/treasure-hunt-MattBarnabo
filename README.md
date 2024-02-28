@@ -90,6 +90,8 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
   -- conditional statement to handleGamePlay to set diamond emoji when current square equals treasure location
 
 - Can select the random losing square and the question mark will become a bomb emoji
+  -- random number 0-8 set that to state variable
+  -- conditional statement to handleGamePlay to set bomb emoji when current square equals bomb location
 
 **Story 3**: In order to play the treasure hunt game, as the user of the application, I should be able to restart the game at any time.
 

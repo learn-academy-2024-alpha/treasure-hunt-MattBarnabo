@@ -7,3 +7,10 @@ h1 {
   width: 200px;
   border: 1px solid black;
 }
+
+.board {
+  display:flex;
+  flex-wrap: wrap;
+  width: 610px;
+  margin: 0 auto;
+}

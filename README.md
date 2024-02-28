@@ -65,7 +65,16 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 - Can see a question mark in each square
 -- passed the question mark from state into the square
 -- add css to resize and position the question mark in the square
+
 - Can click on any of the question marks and see an alert with the index position of that question mark in the array
+-- added onclick to component to return an alert
+--created function to handleClick adding an alert
+--passed index through props and destructured
+-- passed index to the alert
+--made a handleGamePlay function and passed props to square
+--called the handleGamePlay in handClick
+--
+
 - Can click on any of the question marks and a tree emoji appears instead of the alert
 
 **Story 2**: In order to play the treasure hunt game, as the user of the application, I should be able to see a winning square and a losing square.

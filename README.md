@@ -61,7 +61,10 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 --square- individual 
 --board - set of squares
 --added a div to the board and styling to place the squares in a grid
+
 - Can see a question mark in each square
+-- passed the question mark from state into the square
+-- add css to resize and position the question mark in the square
 - Can click on any of the question marks and see an alert with the index position of that question mark in the array
 - Can click on any of the question marks and a tree emoji appears instead of the alert
 

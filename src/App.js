@@ -16,20 +16,38 @@ const App = () => {
 
   const [treasureLocation, setTreasureLocation] =useState(Math.floor(Math.random() * board.length))
 
-  const [bombLocation, setbombLocation] =useState(Math.floor(Math.random() * board.length))
+const  [bombLocation, setbombLocation] =useState(Math.floor(Math.random() * board.length))
 
 
   const handleGamePlay = (currentSquare) => {
-    if(currentSquare === treasureLocation) {
-      board[currentSquare] = "💎"
+    if(currentSquare === bombLocation && bombLocation === treasureLocation){
+      board[currentSquare] = "💣"
       setBoard([...board])
+    } else if(currentSquare === treasureLocation) {
+      board[currentSquare] = "💎"
+      setBoard([...board]) 
     } else if (currentSquare === bombLocation){
       board[currentSquare] = "💣"
       setBoard([...board])
     } else{ board[currentSquare] = "🌴"
       setBoard([...board])
     }
-    
+    }
+
+
+    const restartGameButton = () => {
+      setTreasureLocation(Math.floor(Math.random() * board.length))
+      setbombLocation(Math.floor(Math.random() * board.length))
+      setBoard(["?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?"
+    ])
     }
 
   return (
@@ -42,6 +60,9 @@ const App = () => {
                        key={index}
                        handleGamePlay={handleGamePlay}/>
       })}
+      </div>
+      <div>
+        <button onClick={restartGameButton}>Restart Game</button>
       </div>
     </>
   )

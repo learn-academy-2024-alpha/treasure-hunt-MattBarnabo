@@ -98,8 +98,16 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 **Branch**: restart
 
 - Can see a button called “Play Again”
+  -- added button saying restart game
+  -- added on click to button tag
+  -- created function called restartGameButton to handle logic
+  -- set restart game to set the treasure and bomb indexes.
+  -- set board to an array of "?"
 - Can click on the “Play Again” button to reset the board game
-
+  -- created function called restartGameButton to handle logic
+  -- set restart game to set the treasure and bomb indexes.
+  -- set board to an array of "?"
+  
 **Story 4**: In order to play the treasure hunt game, as the user of the application, I should see a counter that starts at five and decrements by one every time I click on a square that is neither the treasure nor the bomb.
 
 **Branch**: counter
